@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <main id="home">
+    <section class="hero container" id="about">
+      <div class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">Вітаю на моїй сторінці</p>
+          <h1>Богдан <span>Бобрис</span></h1>
+          <h2>Студент · Початківець у веброзробці</h2>
+          <p class="intro">Навчаюся програмуванню, створюю навчальні проєкти та поступово вдосконалюю свої навички. Цікавлюся розробкою сайтів, базами даних і програмуванням.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Мої проєкти</a>
+            <a class="button secondary" href="#contact">Зв'язатися</a>
+          </div>
+        </div>
+
+<div class="avatar-wrap">
+    <img
+        src="{{ url_for('static', filename='img/img.jpg') }}"
+        alt="Фото Богдана"
+        class="avatar"
+    >
+    <p class="avatar-note">Богдан Бобрис</p>
+</div>
+        <span class="hero-decoration decoration-one"></span>
+        <span class="hero-decoration decoration-two"></span>
+      </div>
+    </section>
+
+    <section class="section container" id="education">
+      <div class="section-heading">
+        <p class="eyebrow">Мій шлях</p>
+        <h2>Освіта</h2>
+        <p>Знання, які я здобуваю та розвиваю.</p>
+      </div>
+      <article class="info-card">
+        <div class="timeline-dot"></div>
+        <div>
+          <span class="tag">Навчання</span>
+          <h3>Прикарпатський національний університет</h3>
+          <p class="muted">Спеціальність, пов'язана з комп'ютерними науками / програмуванням</p>
+          <p>Вивчаю основи програмування, вебтехнології, роботу з базами даних та алгоритми. <em>За потреби уточни назву спеціальності й роки навчання.</em></p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Що я вмію</p>
+        <h2>Навички</h2>
+        <p>Основні напрями, з якими я працюю.</p>
+      </div>
+      <div class="card-grid">
+        <article class="info-card skill-card"><span class="card-icon">⌘</span><h3>Програмування</h3><p>Розуміння базових конструкцій, функцій, класів і принципів ООП.</p></article>
+        <article class="info-card skill-card"><span class="card-icon">▤</span><h3>Бази даних</h3><p>Створення таблиць, зв'язків і SQL-запитів для роботи з даними.</p></article>
+        <article class="info-card skill-card"><span class="card-icon">◇</span><h3>Веброзробка</h3><p>Створення сторінок, стилізація інтерфейсу та робота з серверною логікою.</p></article>
+      </div>
+    </section>
+
+    <section class="section container" id="tech">
+      <div class="section-heading">
+        <p class="eyebrow">Мій інструментарій</p>
+        <h2>Технології</h2>
+        <p>Технології, з якими знайомий або працюю в навчальних проєктах.</p>
+      </div>
+      <div class="tech-list">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python</span><span>Flask</span><span>PHP</span><span>Java</span><span>SQL</span><span>Git / GitHub</span>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Практика</p>
+        <h2>Досвід роботи та проєкти</h2>
+        <p>Навчальні роботи, у яких я застосовую отримані знання.</p>
+      </div>
+      <div class="card-grid projects-grid">
+        <article class="info-card project-card">
+          <div class="project-top"><span class="project-number">01</span><span class="project-type">База даних</span></div>
+          <h3>База даних «Готель»</h3>
+          <p>Проєктування таблиць для клієнтів, працівників, номерів і бронювань, а також створення SQL-запитів і процедур.</p>
+          <div class="project-tags"><span>SQL</span><span>Database</span></div>
+        </article>
+        <article class="info-card project-card">
+          <div class="project-top"><span class="project-number">02</span><span class="project-type">Вебзастосунок</span></div>
+          <h3>Flask-застосунок</h3>
+          <p>Навчальний вебпроєкт на Python із налаштуванням середовища, маршрутів і підготовкою до розгортання.</p>
+          <div class="project-tags"><span>Python</span><span>Flask</span><span>Git</span></div>
+        </article>
+        <article class="info-card project-card">
+          <div class="project-top"><span class="project-number">03</span><span class="project-type">Вебсайт</span></div>
+          <h3>Інтернет-магазин</h3>
+          <p>Навчальний сайт із PHP, формами, сесіями та завантаженням зображень товарів.</p>
+          <div class="project-tags"><span>PHP</span><span>HTML</span><span>CSS</span></div>
+        </article>
+      </div>
+      <p class="small-note">Це приклади навчальних проєктів. Залиш лише ті, які справді хочеш показати у своєму резюме.</p>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Будьмо на зв'язку</p>
+          <h2>Контактні дані</h2>
+          <p>Відкритий до навчальних проєктів, практики та нових можливостей.</p>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/bohdanbobrys24-source/flask-app-lab/" target="_blank" rel="noreferrer">⌘ GitHub</a>
+          <span>⌖ Україна</span>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}
+</html>
