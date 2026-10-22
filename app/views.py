@@ -1,8 +1,5 @@
-
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
+from flask import  render_template
+from . import app
 
 @app.route("/")
 def main():
@@ -12,6 +9,7 @@ def main():
 def contact():
     return render_template("contact.html", title="Мо] мої контакти")
 
+@app.route("/homepage")
+def homepage():
+    return render_template("index.html", title="Домашня сторінка")
 
-if __name__ == "__main__":
-    app.run(debug=True, port=8080)

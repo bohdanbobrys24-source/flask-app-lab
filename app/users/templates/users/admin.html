@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Адміністратор{% endblock %}
+
+{% block content %}
+<section class="section container">
+    <div class="info-card">
+        <p class="eyebrow">ADMIN PANEL</p>
+
+        <h1>ADMINISTRATOR</h1>
+
+        <p>Вік адміністратора: {{ age }}</p>
+
+        <a class="button primary"
+           href="{{ url_for('users.greetings', name='John', age=30) }}">
+            Повернутися до привітання
+        </a>
+    </div>
+</section>
+{% endblock %}

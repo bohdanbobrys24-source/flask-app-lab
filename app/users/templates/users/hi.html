@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Привітання | BB.{% endblock %}
+
+{% block content %}
+<section class="hero container">
+    <div class="hero-card greeting-card">
+        <div class="hero-copy">
+            <p class="eyebrow">USER PROFILE · ВІТАННЯ</p>
+
+            <h1>Привіт, <span>{{ name }}</span>!</h1>
+
+            <h2>Раді бачити тебе на нашому сайті.</h2>
+
+            <p class="intro">
+                Це твоя персональна сторінка привітання.
+                Тут відображається інформація, передана через Flask.
+            </p>
+
+            <div class="user-details">
+                <div class="detail-item">
+                    <span class="detail-label">Ім'я користувача</span>
+                    <strong>{{ name }}</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Вік</span>
+                    <strong>
+                        {% if age is not none %}
+                            {{ age }} років
+                        {% else %}
+                            Не вказано
+                        {% endif %}
+                    </strong>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a class="button primary" href="{{ url_for('main') }}">
+                    На головну
+                </a>
+
+                <a class="button secondary" href="{{ url_for('users.greetings', name='John', age=30) }}">
+                    Приклад привітання
+                </a>
+            </div>
+        </div>
+
+        <div class="avatar-wrap">
+            <div class="avatar greeting-avatar">
+                <span>{{ name[:1] }}</span>
+            </div>
+        </div>
+
+        <div class="hero-decoration decoration-one"></div>
+        <div class="hero-decoration decoration-two"></div>
+    </div>
+</section>
+{% endblock %}
