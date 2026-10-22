@@ -1,5 +1,4 @@
 from flask import render_template, request, redirect, url_for
-
 from . import user_bp
 
 
@@ -7,22 +6,11 @@ from . import user_bp
 def greetings(name):
     name = name.upper()
     age = request.args.get("age", None, int)
-
-    return render_template(
-        "users/hi.html",
-        name=name,
-        age=age
-    )
+    return render_template("hi.html", name=name, age=age)
 
 
 @user_bp.route("/admin")
-def admin_redirect():
-    return redirect(url_for("users.admin"))
-
-
-@user_bp.route("/administrator")
 def admin():
-    return render_template(
-        "users/admin.html",
-        age=45
+    return redirect(
+        url_for("users.greetings", name="Administrator", age=45)
     )
