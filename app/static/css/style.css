@@ -546,3 +546,301 @@ text-align: left;
 }
 
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #10131a;
+    color: #f1f3f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+/* Навігація */
+
+.header {
+    background: #171b25;
+    border-bottom: 1px solid #292f3d;
+}
+
+.nav {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #8b7cff;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #b8bdcc;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #a99dff;
+}
+
+/* Заголовок */
+
+.page-heading {
+    padding: 65px 0 35px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #a99dff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.page-heading h1,
+.detail-info h1 {
+    font-size: clamp(30px, 5vw, 42px);
+    margin-bottom: 16px;
+}
+
+.page-heading > p:last-child {
+    color: #aeb4c4;
+    line-height: 1.7;
+}
+
+/* Картки товарів */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding-bottom: 60px;
+}
+
+.product-card {
+    background: #191e29;
+    border: 1px solid #2b3140;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #8173f5;
+}
+
+.product-image,
+.product-placeholder {
+    width: 100%;
+    height: 210px;
+}
+
+.product-image {
+    display: block;
+    object-fit: cover;
+}
+
+.product-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #252b3a;
+    font-size: 65px;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.product-description {
+    color: #aeb4c4;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+.product-footer {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.price,
+.detail-price {
+    color: #a99dff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 16px;
+    border-radius: 8px;
+    background: #7968ee;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #6553d5;
+}
+
+.empty-message {
+    color: #aeb4c4;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Детальна сторінка */
+
+.detail-container {
+    flex: 1;
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #b7adff;
+    margin-bottom: 25px;
+}
+
+.back-link:hover {
+    color: white;
+}
+
+.detail-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: #191e29;
+    border: 1px solid #2b3140;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.detail-image img,
+.detail-image .product-placeholder {
+    width: 100%;
+    min-height: 280px;
+    max-height: 420px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.detail-image .product-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #252b3a;
+    font-size: 90px;
+}
+
+.detail-info h1 {
+    margin-bottom: 12px;
+}
+
+.product-id {
+    color: #858da1;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.detail-description {
+    color: #c0c5d2;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.detail-price {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Підвал */
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 25px;
+    color: #858da1;
+    border-top: 1px solid #292f3d;
+    font-size: 13px;
+}
+
+/* Адаптація для телефона */
+
+@media (max-width: 800px) {
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .detail-card {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 520px) {
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px 0;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-card {
+        padding: 18px;
+    }
+}

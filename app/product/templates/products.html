@@ -1,0 +1,51 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<main class="container">
+    <section class="page-heading">
+        <p class="subtitle">НАША КОЛЕКЦІЯ</p>
+        <h1>Каталог товарів</h1>
+        <p>Перегляньте наші товари та дізнайтеся більше про кожен із них.</p>
+    </section>
+
+    <section class="products-grid">
+        {% for product in products %}
+        <article class="product-card">
+            {% if product.image %}
+                <img
+                    src="{{ product.image }}"
+                    alt="{{ product.name }}"
+                    class="product-image"
+                >
+            {% else %}
+                <div class="product-placeholder">📦</div>
+            {% endif %}
+
+            <div class="product-info">
+                <h2>{{ product.name }}</h2>
+
+                <p class="product-description">
+                    {{ product.description }}
+                </p>
+
+                <div class="product-footer">
+                    <span class="price">
+                        {{ "%.2f"|format(product.price) }} грн
+                    </span>
+
+                    <a
+                        class="button"
+                        href="{{ url_for('product.detail_product', product_id=product.id) }}"
+                    >
+                        Детальніше
+                    </a>
+                </div>
+            </div>
+        </article>
+        {% else %}
+            <p class="empty-message">Наразі товарів немає.</p>
+        {% endfor %}
+    </section>
+</main>
+{% endblock %}

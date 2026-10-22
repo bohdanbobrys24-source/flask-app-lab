@@ -3,13 +3,23 @@
 
     <button class="menu-toggle" aria-label="Відкрити меню" aria-expanded="false" type="button">☰</button>
     <ul class="nav-links">
-       <li><a href="{{ url_for('main') }}">Резюме</a></li>
-    <li><a href="{{ url_for('homepage') }}">Домашня сторінка</a></li>
-    <li><a href="{{ url_for('contact') }}">Контакти</a></li>
     <li>
-        <a href="{{ url_for('users.greetings', name='Bober', age=19) }}">
-            Сторінка користувача
-        </a>
+        <a href="{{ url_for('main') }}">Резюме</a>
+    </li>
+    <li>
+        <a href="{{ url_for('homepage') }}">Домашня сторінка</a>
+    </li>
+    <li>
+        <a href="{{ url_for('contact') }}">Контакти</a>
+    </li>
+    <li>
+        <a href="{{ url_for('product.one') }}">Усі товари</a>
+    </li>
+    <li>
+        <a href="{{ url_for('product.detail_product', product_id=1) }}">Деталі товару</a>
+    </li>
+    <li>
+        <a href="{{ url_for('users.greetings', name='Bober', age=19) }}">Сторінка користувача</a>
     </li>
     </ul>
 </nav>

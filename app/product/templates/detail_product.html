@@ -1,0 +1,42 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<main class="container detail-container">
+    <a href="{{ url_for('product.one') }}" class="back-link">
+        ← Повернутися до товарів
+    </a>
+
+    <article class="detail-card">
+        <div class="detail-image">
+            {% if product.image %}
+                <img src="{{ product.image }}" alt="{{ product.name }}">
+            {% else %}
+                <div class="product-placeholder">📦</div>
+            {% endif %}
+        </div>
+
+        <div class="detail-info">
+            <p class="subtitle">ДЕТАЛЬНА ІНФОРМАЦІЯ</p>
+
+            <h1>{{ product.name }}</h1>
+
+            <p class="product-id">
+                Артикул: #{{ product.id }}
+            </p>
+
+            <p class="detail-description">
+                {{ product.description }}
+            </p>
+
+            <p class="detail-price">
+                {{ "%.2f"|format(product.price) }} грн
+            </p>
+
+            <a href="{{ url_for('product.one') }}" class="button">
+                Повернутися до каталогу
+            </a>
+        </div>
+    </article>
+</main>
+{% endblock %}
