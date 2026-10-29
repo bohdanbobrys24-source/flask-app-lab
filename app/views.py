@@ -1,8 +1,9 @@
-from flask import  render_template
+from flask import  render_template,session
 from . import app
 
 @app.route("/")
 def main():
+    session.pop("username", None)
     return render_template("index.html", title="Моє резюме")
 
 @app.route("/contact")

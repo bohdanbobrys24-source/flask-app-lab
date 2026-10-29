@@ -1,0 +1,201 @@
+
+{% extends "base.html" %}
+
+{% block title %}Мій профіль | BB.{% endblock %}
+
+{% block content %}
+<main class="container profile-page {{ theme|default('dark') }}">
+
+  
+    <section class="hero">
+        <div class="hero-card greeting-card">
+            <div class="hero-copy">
+                <p class="eyebrow">ОСОБИСТИЙ КАБІНЕТ</p>
+
+                <h1>Привіт, <span>{{ name }}</span>!</h1>
+                <h2>Ти успішно увійшов у систему.</h2>
+
+                <p class="intro">
+                    Твоє ім'я збережене в сесії. Нижче можна керувати
+                    cookie та обрати тему профілю.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button secondary"
+                       href="{{ url_for('users.greetings', name=name) }}">
+                        Сторінка привітання
+                    </a>
+
+                    <a class="button primary"
+                       href="{{ url_for('users.logout') }}">
+                        Вийти
+                    </a>
+                </div>
+            </div>
+
+            <div class="avatar-wrap">
+                <div class="avatar greeting-avatar">
+                    <span>{{ name[:1]|upper }}</span>
+                </div>
+                <p class="avatar-note">Користувач сесії</p>
+            </div>
+
+            <div class="hero-decoration decoration-one"></div>
+            <div class="hero-decoration decoration-two"></div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="section-heading">
+            <p class="eyebrow">НАЛАШТУВАННЯ</p>
+            <h2>Тема профілю</h2>
+            <p>Обери кольорову схему для сторінки.</p>
+        </div>
+
+        <div class="info-card theme-settings">
+            <p>
+                Поточна тема:
+                <strong>
+                    {% if theme == 'light' %}
+                        Світла
+                    {% elif theme == 'orange' %}
+                        Помаранчева
+                    {% else %}
+                        Темна
+                    {% endif %}
+                </strong>
+            </p>
+
+            <div class="theme-buttons">
+                <a class="button secondary"
+                   href="{{ url_for('users.set_theme', theme='dark') }}">
+                    Темна тема
+                </a>
+
+                <a class="button secondary"
+                   href="{{ url_for('users.set_theme', theme='light') }}">
+                    Світла тема
+                </a>
+
+                <a class="button primary"
+                   href="{{ url_for('users.set_theme', theme='orange') }}">
+                    Помаранчева тема
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="section-heading">
+            <p class="eyebrow">COOKIE</p>
+            <h2>Додати cookie</h2>
+            <p>Вкажи назву, значення та термін дії cookie у днях.</p>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>Нова cookie</h2>
+                <p>
+                    Cookie встановлюється у відповіді сервера
+                    та зберігається браузером.
+                </p>
+            </div>
+
+            <div class="contact-form-wrap">
+                <form action="{{ url_for('users.add_cookie') }}" method="post">
+                    <div class="form-group">
+                        <label for="cookie_key">Ключ</label>
+                        <input type="text"
+                               id="cookie_key"
+                               name="key"
+                               placeholder="Наприклад, favorite_color"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cookie_value">Значення</label>
+                        <input type="text"
+                               id="cookie_value"
+                               name="value"
+                               placeholder="Наприклад, orange"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cookie_days">Термін дії (днів)</label>
+                        <input type="number"
+                               id="cookie_days"
+                               name="days"
+                               min="1"
+                               value="7"
+                               required>
+                    </div>
+
+                    <button type="submit" class="button primary">
+                        Додати cookie
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <p class="eyebrow">ЗБЕРЕЖЕНІ ДАНІ</p>
+            <h2>Збережені cookie</h2>
+            <p>
+                Тут показано cookie, які браузер надіслав
+                у поточному запиті.
+            </p>
+        </div>
+
+        <div class="info-card cookie-table-wrap">
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Ключ</th>
+                        <th>Значення</th>
+                        <th>Дія</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for key, value in cookies.items() %}
+                    <tr>
+                        <td>{{ key }}</td>
+                        <td>{{ value }}</td>
+                        <td>
+                            <form action="{{ url_for('users.delete_cookie') }}"
+                                  method="post">
+                                <input type="hidden" name="key" value="{{ key }}">
+
+                                <button type="submit" class="button secondary">
+                                    Видалити
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="3">Cookie поки немає.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <form action="{{ url_for('users.delete_cookie') }}"
+                  method="post"
+                  class="delete-all-form">
+                <input type="hidden" name="delete_all" value="1">
+
+                <button type="submit" class="button secondary">
+                    Видалити всі cookie
+                </button>
+            </form>
+        </div>
+    </section>
+
+</main>
+{% endblock %}
