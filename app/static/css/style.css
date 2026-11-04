@@ -1083,3 +1083,25 @@ nav a.active {
         flex-direction: column;
     }
 }
+.product-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-actions form {
+    margin: 0;
+}
+
+.button-delete {
+    background: #963c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.button-delete:hover {
+    background: #bc4b4b;
+}

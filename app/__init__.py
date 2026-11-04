@@ -9,6 +9,7 @@ logging.basicConfig(
 )
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "my-super-secret-key-123"
+app.config["MAX_CONTENT_LENGTH"] = 5 * 1024 * 1024  # 5 MB uploads
 from .users import user_bp
 from .product import product_bp
 from . import views

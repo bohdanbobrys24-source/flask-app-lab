@@ -20,3 +20,318 @@
 2026-11-04 21:51:35,557 - INFO - 127.0.0.1 - - [04/Nov/2026 21:51:35] "GET /static/script/script.js HTTP/1.1" 200 -
 2026-11-04 21:51:35,559 - INFO - 127.0.0.1 - - [04/Nov/2026 21:51:35] "GET /static/css/style.css HTTP/1.1" 200 -
 2026-11-04 21:51:35,951 - INFO - 127.0.0.1 - - [04/Nov/2026 21:51:35] "GET /favicon.ico HTTP/1.1" 404 -
+2026-11-04 22:26:13,077 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 22:26:13,077 - INFO - Press CTRL+C to quit
+2026-11-04 22:26:13,081 - INFO -  * Restarting with stat
+2026-11-04 22:26:13,763 - WARNING -  * Debugger is active!
+2026-11-04 22:26:13,773 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:26:39,606 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:39] "GET / HTTP/1.1" 200 -
+2026-11-04 22:26:39,854 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:39] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:26:39,863 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:39] "GET /static/img/img.jpg HTTP/1.1" 304 -
+2026-11-04 22:26:39,864 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:39] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:26:51,769 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:51] "GET /users/login HTTP/1.1" 200 -
+2026-11-04 22:26:51,786 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:51] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:26:51,787 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:51] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:26:51,826 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:51] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:26:57,409 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:57] "POST /users/login HTTP/1.1" 302 -
+2026-11-04 22:26:57,435 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:57] "GET /users/profile HTTP/1.1" 200 -
+2026-11-04 22:26:57,450 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:57] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:26:57,451 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:57] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:26:57,502 - INFO - 127.0.0.1 - - [04/Nov/2026 22:26:57] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:27:02,382 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:02] "GET /product/product HTTP/1.1" 200 -
+2026-11-04 22:27:02,395 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:02] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:27:02,396 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:02] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:27:02,440 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:02] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:27:04,649 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:04] "GET /product/1 HTTP/1.1" 200 -
+2026-11-04 22:27:04,665 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:04] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:27:04,667 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:04] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:27:04,702 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:04] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:27:07,208 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:07] "GET /product/product HTTP/1.1" 200 -
+2026-11-04 22:27:07,222 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:07] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:27:07,222 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:07] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:27:07,279 - INFO - 127.0.0.1 - - [04/Nov/2026 22:27:07] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:28:03,831 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\forms.py', reloading
+2026-11-04 22:28:03,902 - INFO -  * Restarting with stat
+2026-11-04 22:28:04,436 - WARNING -  * Debugger is active!
+2026-11-04 22:28:04,441 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:29:00,527 - INFO - 127.0.0.1 - - [04/Nov/2026 22:29:00] "GET /product HTTP/1.1" 404 -
+2026-11-04 22:29:11,500 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 22:29:11,500 - INFO - Press CTRL+C to quit
+2026-11-04 22:29:11,502 - INFO -  * Restarting with stat
+2026-11-04 22:29:12,015 - WARNING -  * Debugger is active!
+2026-11-04 22:29:12,021 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:29:14,886 - INFO - 127.0.0.1 - - [04/Nov/2026 22:29:14] "GET /product HTTP/1.1" 404 -
+2026-11-04 22:29:15,709 - INFO - 127.0.0.1 - - [04/Nov/2026 22:29:15] "GET /product HTTP/1.1" 404 -
+2026-11-04 22:29:27,678 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 22:29:27,678 - INFO - Press CTRL+C to quit
+2026-11-04 22:29:27,679 - INFO -  * Restarting with stat
+2026-11-04 22:29:28,247 - WARNING -  * Debugger is active!
+2026-11-04 22:29:28,252 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:29:34,775 - INFO - 127.0.0.1 - - [04/Nov/2026 22:29:34] "GET / HTTP/1.1" 200 -
+2026-11-04 22:29:34,994 - INFO - 127.0.0.1 - - [04/Nov/2026 22:29:34] "GET /static/img/img.jpg HTTP/1.1" 304 -
+2026-11-04 22:29:34,997 - INFO - 127.0.0.1 - - [04/Nov/2026 22:29:34] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:29:34,998 - INFO - 127.0.0.1 - - [04/Nov/2026 22:29:34] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:30:32,118 - INFO - 127.0.0.1 - - [04/Nov/2026 22:30:32] "GET /product HTTP/1.1" 404 -
+2026-11-04 22:30:40,088 - INFO - 127.0.0.1 - - [04/Nov/2026 22:30:40] "GET / HTTP/1.1" 200 -
+2026-11-04 22:30:40,103 - INFO - 127.0.0.1 - - [04/Nov/2026 22:30:40] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:30:40,106 - INFO - 127.0.0.1 - - [04/Nov/2026 22:30:40] "GET /static/img/img.jpg HTTP/1.1" 304 -
+2026-11-04 22:30:40,107 - INFO - 127.0.0.1 - - [04/Nov/2026 22:30:40] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:30:40,145 - INFO - 127.0.0.1 - - [04/Nov/2026 22:30:40] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:31:18,389 - INFO - 127.0.0.1 - - [04/Nov/2026 22:31:18] "GET /product HTTP/1.1" 404 -
+2026-11-04 22:32:03,664 - INFO - 127.0.0.1 - - [04/Nov/2026 22:32:03] "GET /product/1/edit?utm_source=chatgpt.com HTTP/1.1" 404 -
+2026-11-04 22:32:03,741 - INFO - 127.0.0.1 - - [04/Nov/2026 22:32:03] "GET /product/1/edit?utm_source=chatgpt.com HTTP/1.1" 404 -
+2026-11-04 22:32:48,275 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:32:48,345 - INFO -  * Restarting with stat
+2026-11-04 22:34:22,457 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 22:34:22,458 - INFO - Press CTRL+C to quit
+2026-11-04 22:34:22,460 - INFO -  * Restarting with stat
+2026-11-04 22:34:22,954 - WARNING -  * Debugger is active!
+2026-11-04 22:34:22,961 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:34:33,881 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:33] "GET /product HTTP/1.1" 200 -
+2026-11-04 22:34:34,087 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:34] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:34:34,088 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:34] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:34:37,372 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:37] "GET /contact HTTP/1.1" 200 -
+2026-11-04 22:34:37,410 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:37] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:34:37,413 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:37] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:34:43,341 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:43] "GET /product/1 HTTP/1.1" 404 -
+2026-11-04 22:34:45,508 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:45] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 22:34:45,545 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:45] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:34:45,549 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:45] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:34:46,831 - INFO - 127.0.0.1 - - [04/Nov/2026 22:34:46] "GET /product/1 HTTP/1.1" 404 -
+2026-11-04 22:35:38,833 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\database.py', reloading
+2026-11-04 22:35:38,887 - INFO -  * Restarting with stat
+2026-11-04 22:35:39,490 - WARNING -  * Debugger is active!
+2026-11-04 22:35:39,494 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:35:40,531 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\database.py', reloading
+2026-11-04 22:35:40,610 - INFO -  * Restarting with stat
+2026-11-04 22:35:41,170 - WARNING -  * Debugger is active!
+2026-11-04 22:35:41,175 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:35:46,243 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:46] "GET / HTTP/1.1" 200 -
+2026-11-04 22:35:46,460 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:46] "GET /static/img/img.jpg HTTP/1.1" 304 -
+2026-11-04 22:35:46,461 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:46] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:35:46,462 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:46] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:35:48,439 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:48] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 22:35:48,458 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:48] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:35:48,459 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:48] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:35:48,498 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:48] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:35:52,234 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:52] "GET /product/1 HTTP/1.1" 404 -
+2026-11-04 22:35:54,625 - INFO - 127.0.0.1 - - [04/Nov/2026 22:35:54] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:36:25,740 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:25] "GET /product/add HTTP/1.1" 200 -
+2026-11-04 22:36:25,759 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:25] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:36:25,761 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:25] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:36:25,798 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:25] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:36:56,726 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:56] "POST /product/add HTTP/1.1" 302 -
+2026-11-04 22:36:56,740 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:56] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 22:36:56,800 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:56] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:36:56,806 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:56] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:36:59,191 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:59] "GET /product/1 HTTP/1.1" 200 -
+2026-11-04 22:36:59,215 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:59] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:36:59,216 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:59] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:36:59,245 - INFO - 127.0.0.1 - - [04/Nov/2026 22:36:59] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:37:01,085 - INFO - 127.0.0.1 - - [04/Nov/2026 22:37:01] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 22:37:01,112 - INFO - 127.0.0.1 - - [04/Nov/2026 22:37:01] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:37:01,113 - INFO - 127.0.0.1 - - [04/Nov/2026 22:37:01] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:37:01,155 - INFO - 127.0.0.1 - - [04/Nov/2026 22:37:01] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:38:07,848 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:38:07,920 - INFO -  * Restarting with stat
+2026-11-04 22:38:08,612 - WARNING -  * Debugger is active!
+2026-11-04 22:38:08,619 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:38:10,665 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:38:10,718 - INFO -  * Restarting with stat
+2026-11-04 22:38:11,265 - WARNING -  * Debugger is active!
+2026-11-04 22:38:11,270 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:39:37,405 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\__init__.py', reloading
+2026-11-04 22:39:37,454 - INFO -  * Restarting with stat
+2026-11-04 22:39:38,113 - WARNING -  * Debugger is active!
+2026-11-04 22:39:38,119 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:39:53,353 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\database.py', reloading
+2026-11-04 22:39:53,406 - INFO -  * Restarting with stat
+2026-11-04 22:39:53,938 - WARNING -  * Debugger is active!
+2026-11-04 22:39:53,943 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:40:09,209 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\forms.py', reloading
+2026-11-04 22:40:09,287 - INFO -  * Restarting with stat
+2026-11-04 22:40:09,868 - WARNING -  * Debugger is active!
+2026-11-04 22:40:09,872 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:40:21,004 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:40:21,051 - INFO -  * Restarting with stat
+2026-11-04 22:40:21,578 - WARNING -  * Debugger is active!
+2026-11-04 22:40:21,584 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:40:44,903 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:40:44,949 - INFO -  * Restarting with stat
+2026-11-04 22:40:45,508 - WARNING -  * Debugger is active!
+2026-11-04 22:40:45,512 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:40:53,633 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:40:53,694 - INFO -  * Restarting with stat
+2026-11-04 22:40:54,407 - WARNING -  * Debugger is active!
+2026-11-04 22:40:54,415 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:40:55,460 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:40:55,513 - INFO -  * Restarting with stat
+2026-11-04 22:40:56,071 - WARNING -  * Debugger is active!
+2026-11-04 22:40:56,078 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:40:57,122 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:40:57,176 - INFO -  * Restarting with stat
+2026-11-04 22:40:57,785 - WARNING -  * Debugger is active!
+2026-11-04 22:40:57,789 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:40:59,851 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:40:59,902 - INFO -  * Restarting with stat
+2026-11-04 22:41:00,477 - WARNING -  * Debugger is active!
+2026-11-04 22:41:00,481 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:41:02,529 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:41:02,588 - INFO -  * Restarting with stat
+2026-11-04 22:45:46,872 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 22:45:46,873 - INFO - Press CTRL+C to quit
+2026-11-04 22:45:46,878 - INFO -  * Restarting with stat
+2026-11-04 22:45:47,572 - WARNING -  * Debugger is active!
+2026-11-04 22:45:47,582 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:45:48,346 - INFO - 127.0.0.1 - - [04/Nov/2026 22:45:48] "GET / HTTP/1.1" 200 -
+2026-11-04 22:45:48,535 - INFO - 127.0.0.1 - - [04/Nov/2026 22:45:48] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:45:48,542 - INFO - 127.0.0.1 - - [04/Nov/2026 22:45:48] "GET /static/img/img.jpg HTTP/1.1" 304 -
+2026-11-04 22:45:48,543 - INFO - 127.0.0.1 - - [04/Nov/2026 22:45:48] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:45:53,891 - INFO - 127.0.0.1 - - [04/Nov/2026 22:45:53] "GET /contact HTTP/1.1" 200 -
+2026-11-04 22:45:53,906 - INFO - 127.0.0.1 - - [04/Nov/2026 22:45:53] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:45:53,907 - INFO - 127.0.0.1 - - [04/Nov/2026 22:45:53] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:45:53,946 - INFO - 127.0.0.1 - - [04/Nov/2026 22:45:53] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:46:08,143 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:08] "GET /contact HTTP/1.1" 200 -
+2026-11-04 22:46:08,209 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:08] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:46:08,211 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:08] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:46:36,178 - INFO - Ім'я: Богдан Боб, Email: bohdan.bobrys.24@pnu.edu.ua, Телефон: +380911234124, Тема: question, Повідомлення: Привіт
+2026-11-04 22:46:36,179 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:36] "POST /contact HTTP/1.1" 302 -
+2026-11-04 22:46:36,189 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:36] "GET /contact HTTP/1.1" 200 -
+2026-11-04 22:46:36,228 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:36] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:46:36,230 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:36] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:46:52,493 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:52] "POST /contact HTTP/1.1" 200 -
+2026-11-04 22:46:52,528 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:52] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:46:52,535 - INFO - 127.0.0.1 - - [04/Nov/2026 22:46:52] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:47:50,906 - INFO - 127.0.0.1 - - [04/Nov/2026 22:47:50] "GET /product/add HTTP/1.1" 200 -
+2026-11-04 22:47:50,945 - INFO - 127.0.0.1 - - [04/Nov/2026 22:47:50] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:47:50,952 - INFO - 127.0.0.1 - - [04/Nov/2026 22:47:50] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:48:40,538 - INFO - 127.0.0.1 - - [04/Nov/2026 22:48:40] "POST /product/add HTTP/1.1" 302 -
+2026-11-04 22:48:40,557 - INFO - 127.0.0.1 - - [04/Nov/2026 22:48:40] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 22:48:40,606 - INFO - 127.0.0.1 - - [04/Nov/2026 22:48:40] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:48:40,607 - INFO - 127.0.0.1 - - [04/Nov/2026 22:48:40] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:48:57,979 - INFO - 127.0.0.1 - - [04/Nov/2026 22:48:57] "GET /product/2 HTTP/1.1" 200 -
+2026-11-04 22:48:58,030 - INFO - 127.0.0.1 - - [04/Nov/2026 22:48:58] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:48:58,032 - INFO - 127.0.0.1 - - [04/Nov/2026 22:48:58] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:49:26,877 - INFO - 127.0.0.1 - - [04/Nov/2026 22:49:26] "GET /product/1/edit HTTP/1.1" 200 -
+2026-11-04 22:49:26,926 - INFO - 127.0.0.1 - - [04/Nov/2026 22:49:26] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:49:26,929 - INFO - 127.0.0.1 - - [04/Nov/2026 22:49:26] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:49:48,800 - INFO - 127.0.0.1 - - [04/Nov/2026 22:49:48] "POST /product/1/edit HTTP/1.1" 302 -
+2026-11-04 22:49:48,808 - INFO - 127.0.0.1 - - [04/Nov/2026 22:49:48] "GET /product/1 HTTP/1.1" 200 -
+2026-11-04 22:49:48,843 - INFO - 127.0.0.1 - - [04/Nov/2026 22:49:48] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:49:48,853 - INFO - 127.0.0.1 - - [04/Nov/2026 22:49:48] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:50:18,709 - INFO - 127.0.0.1 - - [04/Nov/2026 22:50:18] "GET /product/1/delete HTTP/1.1" 405 -
+2026-11-04 22:50:27,578 - INFO - 127.0.0.1 - - [04/Nov/2026 22:50:27] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 22:50:27,619 - INFO - 127.0.0.1 - - [04/Nov/2026 22:50:27] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:50:27,622 - INFO - 127.0.0.1 - - [04/Nov/2026 22:50:27] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:51:02,392 - INFO - 127.0.0.1 - - [04/Nov/2026 22:51:02] "GET /product/1/delere HTTP/1.1" 404 -
+2026-11-04 22:51:06,281 - INFO - 127.0.0.1 - - [04/Nov/2026 22:51:06] "GET /product/1/delete HTTP/1.1" 405 -
+2026-11-04 22:51:14,523 - INFO - 127.0.0.1 - - [04/Nov/2026 22:51:14] "GET /product/2/delete HTTP/1.1" 405 -
+2026-11-04 22:54:45,220 - INFO - The CSRF token is missing.
+2026-11-04 22:54:45,221 - INFO - 127.0.0.1 - - [04/Nov/2026 22:54:45] "POST /product/2/delete HTTP/1.1" 400 -
+2026-11-04 22:54:53,387 - INFO - 127.0.0.1 - - [04/Nov/2026 22:54:53] "GET /product/2/delete HTTP/1.1" 405 -
+2026-11-04 22:55:10,638 - INFO - 127.0.0.1 - - [04/Nov/2026 22:55:10] "GET /product/2 HTTP/1.1" 200 -
+2026-11-04 22:55:10,692 - INFO - 127.0.0.1 - - [04/Nov/2026 22:55:10] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:55:10,697 - INFO - 127.0.0.1 - - [04/Nov/2026 22:55:10] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:55:17,209 - INFO - 127.0.0.1 - - [04/Nov/2026 22:55:17] "GET /product/edit HTTP/1.1" 404 -
+2026-11-04 22:55:21,389 - INFO - 127.0.0.1 - - [04/Nov/2026 22:55:21] "GET /product/add HTTP/1.1" 200 -
+2026-11-04 22:55:21,428 - INFO - 127.0.0.1 - - [04/Nov/2026 22:55:21] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:55:21,439 - INFO - 127.0.0.1 - - [04/Nov/2026 22:55:21] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:58:07,979 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:58:08,083 - INFO -  * Restarting with stat
+2026-11-04 22:58:08,786 - WARNING -  * Debugger is active!
+2026-11-04 22:58:08,791 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:58:17,097 - INFO - 127.0.0.1 - - [04/Nov/2026 22:58:17] "GET /product/1/delete HTTP/1.1" 400 -
+2026-11-04 22:58:26,018 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 22:58:26,152 - INFO -  * Restarting with stat
+2026-11-04 22:58:26,761 - WARNING -  * Debugger is active!
+2026-11-04 22:58:26,771 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 22:59:41,623 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:41] "GET /product/ HTTP/1.1" 200 -
+2026-11-04 22:59:41,784 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:41] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:59:41,789 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:41] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:59:43,158 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:43] "GET /product/1 HTTP/1.1" 200 -
+2026-11-04 22:59:43,190 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:43] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:59:43,193 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:43] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:59:45,332 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:45] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 22:59:45,371 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:45] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:59:45,374 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:45] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:59:46,732 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:46] "GET /product/1 HTTP/1.1" 200 -
+2026-11-04 22:59:46,776 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:46] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:59:46,780 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:46] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:59:47,381 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:47] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 22:59:47,411 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:47] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:59:47,418 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:47] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 22:59:52,447 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:52] "GET /product/1 HTTP/1.1" 200 -
+2026-11-04 22:59:52,484 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:52] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:59:52,486 - INFO - 127.0.0.1 - - [04/Nov/2026 22:59:52] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 23:01:48,703 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:48] "GET /product/1 HTTP/1.1" 200 -
+2026-11-04 23:01:48,739 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:48] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:01:48,743 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:48] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 23:01:49,974 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:49] "GET /product/1 HTTP/1.1" 200 -
+2026-11-04 23:01:50,009 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:50] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:01:50,011 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:50] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 23:01:51,449 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:51] "GET /product/products HTTP/1.1" 500 -
+2026-11-04 23:01:51,484 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:51] "GET /product/products?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-11-04 23:01:51,486 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:51] "GET /product/products?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-11-04 23:01:51,532 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:51] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png&s=qIrwbNB9538VFZ2dicU7 HTTP/1.1" 200 -
+2026-11-04 23:01:51,570 - INFO - 127.0.0.1 - - [04/Nov/2026 23:01:51] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-11-04 23:02:44,985 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 23:02:45,065 - INFO -  * Restarting with stat
+2026-11-04 23:02:45,773 - WARNING -  * Debugger is active!
+2026-11-04 23:02:45,777 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 23:02:46,758 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:46] "GET /product/products HTTP/1.1" 500 -
+2026-11-04 23:02:46,891 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:46] "GET /product/products?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+2026-11-04 23:02:46,901 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:46] "GET /product/products?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+2026-11-04 23:02:46,944 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:46] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png&s=wNxSjaJYgdYLnjLkYcsg HTTP/1.1" 200 -
+2026-11-04 23:02:46,992 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:46] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+2026-11-04 23:02:47,827 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:47] "GET /product/products HTTP/1.1" 500 -
+2026-11-04 23:02:47,859 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:47] "GET /product/products?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+2026-11-04 23:02:47,861 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:47] "GET /product/products?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+2026-11-04 23:02:47,888 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:47] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png&s=wNxSjaJYgdYLnjLkYcsg HTTP/1.1" 304 -
+2026-11-04 23:02:47,911 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:47] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+2026-11-04 23:02:48,547 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products HTTP/1.1" 500 -
+2026-11-04 23:02:48,578 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+2026-11-04 23:02:48,580 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+2026-11-04 23:02:48,595 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png&s=wNxSjaJYgdYLnjLkYcsg HTTP/1.1" 304 -
+2026-11-04 23:02:48,625 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+2026-11-04 23:02:48,743 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products HTTP/1.1" 500 -
+2026-11-04 23:02:48,773 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+2026-11-04 23:02:48,780 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+2026-11-04 23:02:48,796 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png&s=wNxSjaJYgdYLnjLkYcsg HTTP/1.1" 304 -
+2026-11-04 23:02:48,815 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+2026-11-04 23:02:48,896 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products HTTP/1.1" 500 -
+2026-11-04 23:02:48,925 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+2026-11-04 23:02:48,927 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+2026-11-04 23:02:48,947 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png&s=wNxSjaJYgdYLnjLkYcsg HTTP/1.1" 304 -
+2026-11-04 23:02:48,978 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:48] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+2026-11-04 23:02:49,938 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:49] "GET /product/products HTTP/1.1" 500 -
+2026-11-04 23:02:49,974 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:49] "GET /product/products?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+2026-11-04 23:02:49,977 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:49] "GET /product/products?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+2026-11-04 23:02:49,994 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:49] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png&s=wNxSjaJYgdYLnjLkYcsg HTTP/1.1" 304 -
+2026-11-04 23:02:50,024 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:50] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 304 -
+2026-11-04 23:02:52,738 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:52] "GET /product/products HTTP/1.1" 500 -
+2026-11-04 23:02:52,774 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:52] "GET /product/products?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 304 -
+2026-11-04 23:02:52,781 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:52] "GET /product/products?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 304 -
+2026-11-04 23:02:52,807 - INFO - 127.0.0.1 - - [04/Nov/2026 23:02:52] "GET /product/products?__debugger__=yes&cmd=resource&f=console.png&s=wNxSjaJYgdYLnjLkYcsg HTTP/1.1" 304 -
+2026-11-04 23:03:13,149 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\product\\views.py', reloading
+2026-11-04 23:03:13,244 - INFO -  * Restarting with stat
+2026-11-04 23:03:13,965 - WARNING -  * Debugger is active!
+2026-11-04 23:03:13,969 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 23:03:14,700 - INFO - 127.0.0.1 - - [04/Nov/2026 23:03:14] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 23:03:14,831 - INFO - 127.0.0.1 - - [04/Nov/2026 23:03:14] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:03:14,835 - INFO - 127.0.0.1 - - [04/Nov/2026 23:03:14] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 23:03:16,472 - INFO - 127.0.0.1 - - [04/Nov/2026 23:03:16] "POST /product/1/delete HTTP/1.1" 302 -
+2026-11-04 23:03:16,479 - INFO - 127.0.0.1 - - [04/Nov/2026 23:03:16] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 23:03:16,518 - INFO - 127.0.0.1 - - [04/Nov/2026 23:03:16] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:03:16,519 - INFO - 127.0.0.1 - - [04/Nov/2026 23:03:16] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 23:09:17,773 - INFO - 127.0.0.1 - - [04/Nov/2026 23:09:17] "GET /product/products HTTP/1.1" 200 -
+2026-11-04 23:09:17,815 - INFO - 127.0.0.1 - - [04/Nov/2026 23:09:17] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-11-04 23:09:17,817 - INFO - 127.0.0.1 - - [04/Nov/2026 23:09:17] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-04 23:10:51,794 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\tests\\test_product_bp.py', reloading
+2026-11-04 23:10:51,899 - INFO -  * Restarting with stat
+2026-11-04 23:10:52,502 - WARNING -  * Debugger is active!
+2026-11-04 23:10:52,507 - INFO -  * Debugger PIN: 122-482-393

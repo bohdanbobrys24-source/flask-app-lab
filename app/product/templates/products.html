@@ -28,19 +28,25 @@
                 <p class="product-description">
                     {{ product.description }}
                 </p>
+            <div class="product-footer">
+                <span class="price">
+                {{ "%.2f"|format(product.price) }} грн
+                </span>
 
-                <div class="product-footer">
-                    <span class="price">
-                        {{ "%.2f"|format(product.price) }} грн
-                    </span>
+            <div class="product-actions">
+                <a class="button" href="{{ url_for('product.detail_product', product_id=product.id) }}">
+                    Детальніше
+                </a>
 
-                    <a
-                        class="button"
-                        href="{{ url_for('product.detail_product', product_id=product.id) }}"
-                    >
-                        Детальніше
-                    </a>
-                </div>
+            <form method="POST" action="{{ url_for('product.delete_product', product_id=product.id) }}">
+                {{ delete_form.hidden_tag() }}
+
+            <button type="submit" class="button button-delete" onclick="return confirm('Ви впевнені, що хочете видалити товар?')">
+                Видалити
+            </button>
+            </form>
+            </div>
+            </div>
             </div>
         </article>
         {% else %}
