@@ -1,0 +1,22 @@
+2026-11-04 21:48:16,961 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 21:48:16,962 - INFO - Press CTRL+C to quit
+2026-11-04 21:48:16,964 - INFO -  * Restarting with stat
+2026-11-04 21:48:17,708 - WARNING -  * Debugger is active!
+2026-11-04 21:48:17,713 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 21:48:51,205 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 21:48:51,205 - INFO - Press CTRL+C to quit
+2026-11-04 21:48:51,207 - INFO -  * Restarting with stat
+2026-11-04 21:48:51,852 - WARNING -  * Debugger is active!
+2026-11-04 21:48:51,857 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 21:49:58,008 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 21:49:58,009 - INFO - Press CTRL+C to quit
+2026-11-04 21:49:58,011 - INFO -  * Restarting with stat
+2026-11-04 21:49:58,772 - WARNING -  * Debugger is active!
+2026-11-04 21:49:58,777 - INFO -  * Debugger PIN: 122-482-393
+2026-11-04 21:51:35,344 - INFO - 127.0.0.1 - - [04/Nov/2026 21:51:35] "GET /contact?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-11-04 21:51:35,557 - INFO - 127.0.0.1 - - [04/Nov/2026 21:51:35] "GET /static/script/script.js HTTP/1.1" 200 -
+2026-11-04 21:51:35,559 - INFO - 127.0.0.1 - - [04/Nov/2026 21:51:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-11-04 21:51:35,951 - INFO - 127.0.0.1 - - [04/Nov/2026 21:51:35] "GET /favicon.ico HTTP/1.1" 404 -
