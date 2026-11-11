@@ -1,0 +1,93 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<main class="container post-page">
+
+    <div class="post-heading">
+        <p class="eyebrow">FLASK • SQLALCHEMY</p>
+        <h1>{{ title or "Створення поста" }}</h1>
+        <p>Заповни інформацію та збережи новий пост.</p>
+    </div>
+
+    <div class="post-form-card">
+
+        <div class="post-card-header">
+            <div>
+                <span class="tag">Новий запис</span>
+                <h2>Інформація про пост</h2>
+            </div>
+            <div class="post-icon">✎</div>
+        </div>
+
+        <form method="POST" class="post-form">
+            {{ form.hidden_tag() }}
+
+            <div class="form-group">
+                {{ form.title.label }}
+                {{ form.title(
+                    placeholder="Введіть заголовок поста"
+                ) }}
+
+                {% for error in form.title.errors %}
+                    <p class="form-error">{{ error }}</p>
+                {% endfor %}
+            </div>
+
+            <div class="form-group">
+                {{ form.content.label }}
+                {{ form.content(
+                    placeholder="Напишіть текст вашого поста...",
+                    rows="7"
+                ) }}
+
+                {% for error in form.content.errors %}
+                    <p class="form-error">{{ error }}</p>
+                {% endfor %}
+            </div>
+
+            <div class="post-form-grid">
+                <div class="form-group">
+                    {{ form.publish_date.label }}
+                    {{ form.publish_date() }}
+
+                    {% for error in form.publish_date.errors %}
+                        <p class="form-error">{{ error }}</p>
+                    {% endfor %}
+                </div>
+
+                <div class="form-group">
+                    {{ form.category.label }}
+                    {{ form.category() }}
+
+                    {% for error in form.category.errors %}
+                        <p class="form-error">{{ error }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="post-status">
+                <div>
+                    <strong>Статус публікації</strong>
+                    <p>Активний пост буде позначений як опублікований.</p>
+                </div>
+
+                <label class="post-checkbox">
+                    {{ form.enabled() }}
+                    <span>Активний</span>
+                </label>
+            </div>
+
+            <div class="post-actions">
+                {{ form.submit(class="button primary post-submit") }}
+
+                <a href="{{ url_for('posts.all_posts') }}"
+                   class="button secondary">
+                    Скасувати
+                </a>
+            </div>
+        </form>
+    </div>
+
+</main>
+{% endblock %}

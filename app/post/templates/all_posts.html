@@ -1,0 +1,112 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<main class="container post-page">
+
+    <div class="post-heading">
+        <p class="eyebrow">FLASK • SQLALCHEMY</p>
+        <h1>Усі пости</h1>
+        <p>Перегляд та керування записами, збереженими в базі даних.</p>
+    </div>
+
+    <div class="post-actions">
+        <a href="{{ url_for('posts.create_post') }}"
+           class="button primary">
+            + Створити пост
+        </a>
+    </div>
+
+    <div class="post-list">
+
+        {% for post in posts %}
+
+            <article class="post-form-card">
+
+                <div class="post-card-header">
+                    <div>
+                        <span class="tag">
+                            {{ post.category }}
+                        </span>
+
+                        <h2>{{ post.title }}</h2>
+                    </div>
+
+                    <div class="post-icon">✎</div>
+                </div>
+
+                <p class="post-description">
+                    {{ post.content }}
+                </p>
+
+                <div class="post-meta">
+                    <span>
+                        Автор: {{ post.author }}
+                    </span>
+
+                    <span>
+                        Дата: {{ post.posted.strftime('%d.%m.%Y') }}
+                    </span>
+                </div>
+
+                <div>
+                    {% if post.is_active %}
+                        <span class="post-active">
+                            ● Активний
+                        </span>
+                    {% else %}
+                        <span class="post-inactive">
+                            ● Неактивний
+                        </span>
+                    {% endif %}
+                </div>
+
+                <div class="post-actions">
+
+                    <a href="{{ url_for('posts.edit_post', post_id=post.id) }}"
+                       class="button primary">
+                        ✎ Редагувати
+                    </a>
+
+                    <form
+                        method="POST"
+                        action="{{ url_for('posts.delete_post', post_id=post.id) }}"
+                        onsubmit="return confirm('Точно видалити цей пост?');">
+
+                        {{ delete_form.hidden_tag() }}
+
+                        <button
+                            type="submit"
+                            class="button button-delete">
+                            🗑 Видалити
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </article>
+
+        {% else %}
+
+            <div class="post-form-card">
+                <h2>Поки що немає постів</h2>
+
+                <p class="post-description">
+                    Створи свій перший пост, щоб він з'явився тут.
+                </p>
+
+                <div class="post-actions">
+                    <a href="{{ url_for('posts.create_post') }}"
+                       class="button primary">
+                        + Створити перший пост
+                    </a>
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</main>
+{% endblock %}

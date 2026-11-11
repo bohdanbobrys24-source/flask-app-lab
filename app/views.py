@@ -1,22 +1,33 @@
-from flask import  render_template,session
-from . import app
+
+import logging
+
 from flask import (
-    Flask,
+    Blueprint,
     render_template,
+    session,
     redirect,
     url_for,
-    flash
+    flash,
+    current_app
 )
-from .__init__ import logging
+
 from .form import ContactForm
-@app.route("/")
+
+
+main_bp = Blueprint("main", __name__)
+
+
+@main_bp.route("/")
 def main():
     session.pop("username", None)
-    return render_template("index.html", title="Моє резюме")
+    return render_template(
+        "index.html",
+        title="Моє резюме"
+    )
 
-@app.route("/contact", methods=["GET", "POST"])
+
+@main_bp.route("/contact", methods=["GET", "POST"])
 def contact():
-
     form = ContactForm()
 
     if form.validate_on_submit():
@@ -36,7 +47,7 @@ def contact():
             )
 
         except OSError:
-            app.logger.exception(
+            current_app.logger.exception(
                 "Помилка запису контактної форми"
             )
 
@@ -45,14 +56,18 @@ def contact():
                 "danger"
             )
 
-        return redirect(url_for("contact"))
+        return redirect(url_for("main.contact"))
 
     return render_template(
         "contact.html",
         title="Мої контакти",
         form=form
     )
-@app.route("/homepage")
-def homepage():
-    return render_template("index.html", title="Домашня сторінка")
 
+
+@main_bp.route("/homepage")
+def homepage():
+    return render_template(
+        "index.html",
+        title="Домашня сторінка"
+    )

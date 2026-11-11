@@ -335,3 +335,143 @@
 2026-11-04 23:10:51,899 - INFO -  * Restarting with stat
 2026-11-04 23:10:52,502 - WARNING -  * Debugger is active!
 2026-11-04 23:10:52,507 - INFO -  * Debugger PIN: 122-482-393
+2026-11-05 13:55:43,718 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-05 13:55:43,719 - INFO - Press CTRL+C to quit
+2026-11-05 13:55:43,723 - INFO -  * Restarting with stat
+2026-11-05 13:55:45,416 - WARNING -  * Debugger is active!
+2026-11-05 13:55:45,425 - INFO -  * Debugger PIN: 122-482-393
+2026-11-05 13:56:04,074 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:04] "GET /product/products HTTP/1.1" 200 -
+2026-11-05 13:56:04,287 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:04] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-05 13:56:04,300 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:04] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-05 13:56:04,373 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:04] "GET /favicon.ico HTTP/1.1" 404 -
+2026-11-05 13:56:05,829 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:05] "GET /users/login HTTP/1.1" 200 -
+2026-11-05 13:56:05,865 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:05] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-05 13:56:05,867 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:05] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-05 13:56:10,315 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:10] "POST /users/login HTTP/1.1" 302 -
+2026-11-05 13:56:10,347 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:10] "GET /users/profile HTTP/1.1" 200 -
+2026-11-05 13:56:10,359 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:10] "POST /users/login HTTP/1.1" 302 -
+2026-11-05 13:56:10,367 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:10] "GET /users/profile HTTP/1.1" 200 -
+2026-11-05 13:56:10,405 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:10] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-05 13:56:10,406 - INFO - 127.0.0.1 - - [05/Nov/2026 13:56:10] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-05 15:16:56,706 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\__init__.py', reloading
+2026-11-05 15:16:56,796 - INFO -  * Restarting with stat
+2026-11-10 19:40:49,420 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-10 19:40:49,421 - INFO - Press CTRL+C to quit
+2026-11-10 19:40:49,424 - INFO -  * Restarting with stat
+2026-11-10 19:40:50,611 - WARNING -  * Debugger is active!
+2026-11-10 19:40:50,620 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:43:38,096 - INFO - 127.0.0.1 - - [10/Nov/2026 19:43:38] "GET /post/create HTTP/1.1" 200 -
+2026-11-10 19:43:38,482 - INFO - 127.0.0.1 - - [10/Nov/2026 19:43:38] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:45:38,025 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-10 19:45:38,026 - INFO - Press CTRL+C to quit
+2026-11-10 19:45:38,029 - INFO -  * Restarting with stat
+2026-11-10 19:45:39,402 - WARNING -  * Debugger is active!
+2026-11-10 19:45:39,407 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:45:42,724 - INFO - 127.0.0.1 - - [10/Nov/2026 19:45:42] "GET /post/create HTTP/1.1" 500 -
+2026-11-10 19:45:42,989 - INFO - 127.0.0.1 - - [10/Nov/2026 19:45:42] "GET /post/create?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-11-10 19:45:42,992 - INFO - 127.0.0.1 - - [10/Nov/2026 19:45:42] "GET /post/create?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-11-10 19:45:43,047 - INFO - 127.0.0.1 - - [10/Nov/2026 19:45:43] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png&s=enviLksZwIuTuSGYIhOE HTTP/1.1" 200 -
+2026-11-10 19:45:43,087 - INFO - 127.0.0.1 - - [10/Nov/2026 19:45:43] "GET /post/create?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-11-10 19:46:40,516 - INFO - 127.0.0.1 - - [10/Nov/2026 19:46:40] "GET /post/create HTTP/1.1" 200 -
+2026-11-10 19:46:40,550 - INFO - 127.0.0.1 - - [10/Nov/2026 19:46:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-11-10 19:46:40,581 - INFO - 127.0.0.1 - - [10/Nov/2026 19:46:40] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:46:40,934 - INFO - 127.0.0.1 - - [10/Nov/2026 19:46:40] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:47:22,779 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\post\\views.py', reloading
+2026-11-10 19:47:22,960 - INFO -  * Restarting with stat
+2026-11-10 19:47:24,430 - WARNING -  * Debugger is active!
+2026-11-10 19:47:24,434 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:47:52,368 - INFO - 127.0.0.1 - - [10/Nov/2026 19:47:52] "GET /post/create HTTP/1.1" 200 -
+2026-11-10 19:47:52,545 - INFO - 127.0.0.1 - - [10/Nov/2026 19:47:52] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:47:52,547 - INFO - 127.0.0.1 - - [10/Nov/2026 19:47:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-11-10 19:47:52,606 - INFO - 127.0.0.1 - - [10/Nov/2026 19:47:52] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:48:04,389 - INFO - 127.0.0.1 - - [10/Nov/2026 19:48:04] "POST /post/create HTTP/1.1" 302 -
+2026-11-10 19:48:04,407 - INFO - 127.0.0.1 - - [10/Nov/2026 19:48:04] "GET /post/ HTTP/1.1" 200 -
+2026-11-10 19:48:04,449 - INFO - 127.0.0.1 - - [10/Nov/2026 19:48:04] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-10 19:48:04,450 - INFO - 127.0.0.1 - - [10/Nov/2026 19:48:04] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:48:04,503 - INFO - 127.0.0.1 - - [10/Nov/2026 19:48:04] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:48:42,148 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\post\\views.py', reloading
+2026-11-10 19:48:42,330 - INFO -  * Restarting with stat
+2026-11-10 19:48:44,148 - WARNING -  * Debugger is active!
+2026-11-10 19:48:44,159 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:49:35,076 - INFO - 127.0.0.1 - - [10/Nov/2026 19:49:35] "GET /post/ HTTP/1.1" 200 -
+2026-11-10 19:49:35,257 - INFO - 127.0.0.1 - - [10/Nov/2026 19:49:35] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:49:35,259 - INFO - 127.0.0.1 - - [10/Nov/2026 19:49:35] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-10 19:49:35,316 - INFO - 127.0.0.1 - - [10/Nov/2026 19:49:35] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:49:36,403 - INFO - 127.0.0.1 - - [10/Nov/2026 19:49:36] "GET /post/1/edit HTTP/1.1" 200 -
+2026-11-10 19:49:36,441 - INFO - 127.0.0.1 - - [10/Nov/2026 19:49:36] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-10 19:49:36,443 - INFO - 127.0.0.1 - - [10/Nov/2026 19:49:36] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:49:36,493 - INFO - 127.0.0.1 - - [10/Nov/2026 19:49:36] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:49:40,822 - INFO - 127.0.0.1 - - [10/Nov/2026 19:49:40] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:50:01,776 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\post\\views.py', reloading
+2026-11-10 19:50:01,955 - INFO -  * Restarting with stat
+2026-11-10 19:50:03,468 - WARNING -  * Debugger is active!
+2026-11-10 19:50:03,473 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:50:23,844 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\post\\views.py', reloading
+2026-11-10 19:50:23,985 - INFO -  * Restarting with stat
+2026-11-10 19:50:25,215 - WARNING -  * Debugger is active!
+2026-11-10 19:50:25,219 - INFO -  * Debugger PIN: 144-318-963
+2026-11-10 19:50:34,398 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\post\\views.py', reloading
+2026-11-10 19:50:34,524 - INFO -  * Restarting with stat
+2026-11-10 19:50:36,132 - WARNING -  * Debugger is active!
+2026-11-10 19:50:36,136 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:50:44,352 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\post\\views.py', reloading
+2026-11-10 19:50:44,487 - INFO -  * Restarting with stat
+2026-11-10 19:50:45,878 - WARNING -  * Debugger is active!
+2026-11-10 19:50:45,883 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:50:46,939 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\post\\views.py', reloading
+2026-11-10 19:50:47,103 - INFO -  * Restarting with stat
+2026-11-10 19:50:48,290 - WARNING -  * Debugger is active!
+2026-11-10 19:50:48,294 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:51:29,195 - INFO - 127.0.0.1 - - [10/Nov/2026 19:51:29] "GET /post/ HTTP/1.1" 500 -
+2026-11-10 19:51:29,361 - INFO - 127.0.0.1 - - [10/Nov/2026 19:51:29] "GET /post/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-11-10 19:51:29,371 - INFO - 127.0.0.1 - - [10/Nov/2026 19:51:29] "GET /post/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-11-10 19:51:29,401 - INFO - 127.0.0.1 - - [10/Nov/2026 19:51:29] "GET /post/?__debugger__=yes&cmd=resource&f=console.png&s=V0Bvi66YXp8GjnfzKrYD HTTP/1.1" 200 -
+2026-11-10 19:51:29,422 - INFO - 127.0.0.1 - - [10/Nov/2026 19:51:29] "GET /post/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-11-10 19:52:00,889 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\app\\post\\views.py', reloading
+2026-11-10 19:52:01,083 - INFO -  * Restarting with stat
+2026-11-10 19:52:02,583 - WARNING -  * Debugger is active!
+2026-11-10 19:52:02,586 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:52:48,708 - INFO - 127.0.0.1 - - [10/Nov/2026 19:52:48] "GET /post/ HTTP/1.1" 200 -
+2026-11-10 19:52:48,893 - INFO - 127.0.0.1 - - [10/Nov/2026 19:52:48] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-10 19:52:48,896 - INFO - 127.0.0.1 - - [10/Nov/2026 19:52:48] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:52:48,944 - INFO - 127.0.0.1 - - [10/Nov/2026 19:52:48] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:53:24,469 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\tests\\test_posts.py', reloading
+2026-11-10 19:53:24,710 - INFO -  * Restarting with stat
+2026-11-10 19:53:26,115 - WARNING -  * Debugger is active!
+2026-11-10 19:53:26,119 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:55:04,348 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-10 19:55:04,349 - INFO - Press CTRL+C to quit
+2026-11-10 19:55:04,354 - INFO -  * Restarting with stat
+2026-11-10 19:55:05,683 - WARNING -  * Debugger is active!
+2026-11-10 19:55:05,686 - INFO -  * Debugger PIN: 535-028-691
+2026-11-10 19:55:08,094 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:08] "GET /post/ HTTP/1.1" 200 -
+2026-11-10 19:55:08,277 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:08] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:55:08,282 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:08] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-10 19:55:08,381 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:08] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:55:10,279 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:10] "GET /post/create HTTP/1.1" 200 -
+2026-11-10 19:55:10,320 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:10] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-10 19:55:10,321 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:10] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:55:10,393 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:10] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:55:29,333 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:29] "POST /post/create HTTP/1.1" 302 -
+2026-11-10 19:55:29,344 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:29] "GET /post/ HTTP/1.1" 200 -
+2026-11-10 19:55:29,390 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:29] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-10 19:55:29,393 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:29] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:55:29,436 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:29] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:55:38,023 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:38] "GET /post/1/edit HTTP/1.1" 200 -
+2026-11-10 19:55:38,058 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:38] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-10 19:55:38,062 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:38] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:55:38,146 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:38] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:55:43,936 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:43] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:55:45,496 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:45] "POST /post/1/delete HTTP/1.1" 302 -
+2026-11-10 19:55:45,506 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:45] "GET /post/ HTTP/1.1" 200 -
+2026-11-10 19:55:45,550 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:45] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-10 19:55:45,556 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:45] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-10 19:55:45,594 - INFO - 127.0.0.1 - - [10/Nov/2026 19:55:45] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-10 19:56:16,207 - INFO -  * Detected change in 'C:\\Users\\User\\PycharmProjects\\flask_app_Bobrys\\tests\\test_posts.py', reloading
+2026-11-10 19:56:16,367 - INFO -  * Restarting with stat
+2026-11-10 19:56:17,779 - WARNING -  * Debugger is active!
+2026-11-10 19:56:17,787 - INFO -  * Debugger PIN: 535-028-691
