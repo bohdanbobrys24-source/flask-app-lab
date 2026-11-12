@@ -116,3 +116,12 @@ def delete_post(post_id):
     flash("Пост успішно видалено!", "success")
 
     return redirect(url_for("posts.all_posts"))
+@post_bp.route("/<int:post_id>", methods=["GET"])
+def detail_post(post_id):
+    post = db.get_or_404(Post, post_id)
+
+    return render_template(
+        "detail_post.html",
+        post=post,
+        title="Деталі поста"
+    )

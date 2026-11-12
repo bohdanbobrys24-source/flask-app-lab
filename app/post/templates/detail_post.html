@@ -1,0 +1,62 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<main class="container post-detail-page">
+
+    <a href="{{ url_for('posts.all_posts') }}"
+       class="post-detail-back">
+        ← Повернутися до всіх постів
+    </a>
+
+    <article class="post-detail-card">
+
+        <div class="post-detail-top">
+            <span class="post-detail-category">
+                {{ post.category }}
+            </span>
+
+            {% if post.is_active %}
+                <span class="post-detail-status active">
+                    ● Активний
+                </span>
+            {% else %}
+                <span class="post-detail-status inactive">
+                    ● Неактивний
+                </span>
+            {% endif %}
+        </div>
+
+        <h1 class="post-detail-title">
+            {{ post.title }}
+        </h1>
+
+        <div class="post-detail-meta">
+            <span>Автор: {{ post.author }}</span>
+            <span>
+                Дата: {{ post.posted.strftime('%d.%m.%Y') }}
+            </span>
+            <span>ID: #{{ post.id }}</span>
+        </div>
+
+        <hr class="post-detail-divider">
+
+        <div class="post-detail-content">
+            {{ post.content }}
+        </div>
+
+        <div class="post-detail-actions">
+            <a href="{{ url_for('posts.edit_post', post_id=post.id) }}"
+               class="post-detail-edit">
+                Редагувати пост
+            </a>
+
+            <a href="{{ url_for('posts.all_posts') }}"
+               class="post-detail-list">
+                Усі пости
+            </a>
+        </div>
+
+    </article>
+</main>
+{% endblock %}

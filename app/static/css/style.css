@@ -1372,3 +1372,169 @@ nav a.active {
     font-size: 13px;
     font-weight: 700;
 }
+
+/* ===== ДЕТАЛІ КОНКРЕТНОГО ПОСТА ===== */
+
+.post-detail-page {
+    max-width: 760px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
+}
+
+/* Повернення назад */
+.post-detail-back {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #f28c28;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.post-detail-back:hover {
+    color: #ffae55;
+}
+
+/* Основна картка */
+.post-detail-card {
+    background: #2b2326;
+    border: 1px solid #44363a;
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Категорія та статус */
+.post-detail-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.post-detail-category {
+    background: #422c23;
+    color: #ff9a3d;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.post-detail-status {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.post-detail-status.active {
+    color: #65e9a0;
+}
+
+.post-detail-status.inactive {
+    color: #ff7777;
+}
+
+/* Заголовок */
+.post-detail-title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 25px;
+}
+
+/* Автор, дата, ID */
+.post-detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #d2c5c8;
+    font-size: 13px;
+}
+
+.post-detail-divider {
+    border: 0;
+    border-top: 1px solid #4b3c40;
+    margin: 28px 0;
+    opacity: 1;
+}
+
+/* Повний вміст поста */
+.post-detail-content {
+    color: #f2e9ec;
+    font-size: 16px;
+    line-height: 1.9;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    min-height: 100px;
+    padding: 10px 0;
+}
+
+/* Кнопки */
+.post-detail-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.post-detail-edit,
+.post-detail-list {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.post-detail-edit {
+    background: #f28c28;
+    color: #111111;
+}
+
+.post-detail-edit:hover {
+    background: #ffa34b;
+    color: #111111;
+}
+
+.post-detail-list {
+    background: #403237;
+    color: #ffffff;
+}
+
+.post-detail-list:hover {
+    background: #554247;
+    color: #ffffff;
+}
+
+/* Адаптація для телефона */
+@media (max-width: 600px) {
+    .post-detail-page {
+        margin-top: 25px;
+    }
+
+    .post-detail-card {
+        padding: 22px;
+    }
+
+    .post-detail-title {
+        font-size: 25px;
+    }
+
+    .post-detail-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .post-detail-actions {
+        flex-direction: column;
+    }
+}
