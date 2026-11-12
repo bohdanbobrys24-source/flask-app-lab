@@ -74,12 +74,12 @@ def create_post():
 @post_bp.route("/<int:post_id>/edit", methods=["GET", "POST"])
 def edit_post(post_id):
     post = db.get_or_404(Post, post_id)
-    form = PostForm()
+
+    form = PostForm(obj=post)
 
     if form.validate_on_submit():
-        post.title = form.title.data
-        post.content = form.content.data
-        post.category = form.category.data
+        form.populate_obj(post)
+
         post.is_active = form.enabled.data
         post.posted = datetime.combine(
             form.publish_date.data,
@@ -91,10 +91,7 @@ def edit_post(post_id):
         flash("Пост успішно оновлено!", "success")
         return redirect(url_for("posts.all_posts"))
 
-    if form.is_submitted() is False:
-        form.title.data = post.title
-        form.content.data = post.content
-        form.category.data = post.category
+    if not form.is_submitted():
         form.enabled.data = post.is_active
         form.publish_date.data = post.posted.date()
 
