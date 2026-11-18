@@ -28,6 +28,7 @@ def create_app(config_name="development"):
     from .product import product_bp
     from .post import post_bp
     from .views import main_bp
+    from .product.models import Product, Category
 
     app.register_blueprint(main_bp)
     app.register_blueprint(user_bp)
