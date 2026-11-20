@@ -29,6 +29,7 @@ def create_app(config_name="development"):
     from .post import post_bp
     from .views import main_bp
     from .product.models import Product, Category
+    from .users.models import User
 
     app.register_blueprint(main_bp)
     app.register_blueprint(user_bp)

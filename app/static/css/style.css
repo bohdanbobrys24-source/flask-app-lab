@@ -1538,3 +1538,40 @@ nav a.active {
         flex-direction: column;
     }
 }
+
+/* Теги поста */
+
+.post-detail-tags {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.post-detail-tags strong {
+    display: block;
+    font-size: 15px;
+    color: #334155;
+}
+
+.post-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.post-tag {
+    display: inline-block;
+    padding: 7px 14px;
+    background: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.post-tag:hover {
+    background: #dbeafe;
+    border-color: #93c5fd;
+}

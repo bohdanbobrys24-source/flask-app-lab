@@ -526,3 +526,163 @@
 2026-11-12 16:46:33,100 - INFO - 127.0.0.1 - - [12/Nov/2026 16:46:33] "GET /static/css/style.css HTTP/1.1" 304 -
 2026-11-12 16:46:33,101 - INFO - 127.0.0.1 - - [12/Nov/2026 16:46:33] "GET /static/script/script.js HTTP/1.1" 304 -
 2026-11-12 16:46:33,142 - INFO - 127.0.0.1 - - [12/Nov/2026 16:46:33] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:12:02,701 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-20 11:12:02,702 - INFO - Press CTRL+C to quit
+2026-11-20 11:12:02,706 - INFO -  * Restarting with stat
+2026-11-20 11:12:04,419 - WARNING -  * Debugger is active!
+2026-11-20 11:12:04,475 - INFO -  * Debugger PIN: 824-163-852
+2026-11-20 11:14:42,039 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-20 11:14:42,040 - INFO - Press CTRL+C to quit
+2026-11-20 11:14:42,042 - INFO -  * Restarting with stat
+2026-11-20 11:14:43,534 - WARNING -  * Debugger is active!
+2026-11-20 11:14:43,598 - INFO -  * Debugger PIN: 824-163-852
+2026-11-20 11:15:31,397 - INFO - 127.0.0.1 - - [20/Nov/2026 11:15:31] "GET /post/create?utm_source=chatgpt.com HTTP/1.1" 200 -
+2026-11-20 11:15:31,675 - INFO - 127.0.0.1 - - [20/Nov/2026 11:15:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-11-20 11:15:31,677 - INFO - 127.0.0.1 - - [20/Nov/2026 11:15:31] "GET /static/script/script.js HTTP/1.1" 200 -
+2026-11-20 11:15:32,474 - INFO - 127.0.0.1 - - [20/Nov/2026 11:15:32] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:16:15,630 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:15] "POST /post/create?utm_source=chatgpt.com HTTP/1.1" 302 -
+2026-11-20 11:16:15,665 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:15] "GET /post/ HTTP/1.1" 200 -
+2026-11-20 11:16:15,752 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:15] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:16:15,753 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:15] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:16:15,844 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:15] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:16:24,798 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:24] "GET /post/3/edit HTTP/1.1" 200 -
+2026-11-20 11:16:24,845 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:24] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:16:24,848 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:24] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:16:24,908 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:24] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:16:35,857 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:35] "GET /post/ HTTP/1.1" 200 -
+2026-11-20 11:16:35,986 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:35] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:16:35,990 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:35] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:16:36,049 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:36] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:16:41,704 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:41] "GET /post/3/edit HTTP/1.1" 200 -
+2026-11-20 11:16:41,755 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:41] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:16:41,759 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:41] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:16:41,810 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:41] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:16:44,337 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:44] "POST /post/3/edit HTTP/1.1" 302 -
+2026-11-20 11:16:44,350 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:44] "GET /post/ HTTP/1.1" 200 -
+2026-11-20 11:16:44,418 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:44] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:16:44,424 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:44] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:16:44,497 - INFO - 127.0.0.1 - - [20/Nov/2026 11:16:44] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:17:47,064 - INFO -  * Detected change in 'D:\\un\\PycharmProjects\\flask_app_Bobrys\\app\\post\\models.py', reloading
+2026-11-20 11:17:47,487 - INFO -  * Restarting with stat
+2026-11-20 11:17:49,722 - WARNING -  * Debugger is active!
+2026-11-20 11:17:49,735 - INFO -  * Debugger PIN: 824-163-852
+2026-11-20 11:17:56,955 - INFO -  * Detected change in 'D:\\un\\PycharmProjects\\flask_app_Bobrys\\app\\post\\models.py', reloading
+2026-11-20 11:17:57,281 - INFO -  * Restarting with stat
+2026-11-20 11:17:59,134 - WARNING -  * Debugger is active!
+2026-11-20 11:17:59,147 - INFO -  * Debugger PIN: 824-163-852
+2026-11-20 11:18:12,480 - INFO -  * Detected change in 'D:\\un\\PycharmProjects\\flask_app_Bobrys\\app\\post\\models.py', reloading
+2026-11-20 11:18:12,699 - INFO -  * Restarting with stat
+2026-11-20 11:18:14,222 - WARNING -  * Debugger is active!
+2026-11-20 11:18:14,238 - INFO -  * Debugger PIN: 824-163-852
+2026-11-20 11:18:50,119 - INFO -  * Detected change in 'D:\\un\\PycharmProjects\\flask_app_Bobrys\\app\\post\\models.py', reloading
+2026-11-20 11:18:50,403 - INFO -  * Restarting with stat
+2026-11-20 11:18:52,061 - WARNING -  * Debugger is active!
+2026-11-20 11:18:52,070 - INFO -  * Debugger PIN: 824-163-852
+2026-11-20 11:19:14,644 - INFO -  * Detected change in 'D:\\un\\PycharmProjects\\flask_app_Bobrys\\app\\post\\models.py', reloading
+2026-11-20 11:19:14,847 - INFO -  * Restarting with stat
+2026-11-20 11:19:16,476 - WARNING -  * Debugger is active!
+2026-11-20 11:19:16,492 - INFO -  * Debugger PIN: 472-541-430
+2026-11-20 11:19:19,617 - INFO -  * Detected change in 'D:\\un\\PycharmProjects\\flask_app_Bobrys\\app\\post\\models.py', reloading
+2026-11-20 11:19:19,846 - INFO -  * Restarting with stat
+2026-11-20 11:19:21,642 - WARNING -  * Debugger is active!
+2026-11-20 11:19:21,660 - INFO -  * Debugger PIN: 824-163-852
+2026-11-20 11:34:44,402 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-20 11:34:44,403 - INFO - Press CTRL+C to quit
+2026-11-20 11:34:44,404 - INFO -  * Restarting with stat
+2026-11-20 11:34:46,095 - WARNING -  * Debugger is active!
+2026-11-20 11:34:46,113 - INFO -  * Debugger PIN: 824-163-852
+2026-11-20 11:34:54,698 - INFO - 127.0.0.1 - - [20/Nov/2026 11:34:54] "GET /post/ HTTP/1.1" 200 -
+2026-11-20 11:34:54,971 - INFO - 127.0.0.1 - - [20/Nov/2026 11:34:54] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:34:54,976 - INFO - 127.0.0.1 - - [20/Nov/2026 11:34:54] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:34:55,049 - INFO - 127.0.0.1 - - [20/Nov/2026 11:34:55] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:34:58,534 - INFO - 127.0.0.1 - - [20/Nov/2026 11:34:58] "GET /post/3/edit HTTP/1.1" 200 -
+2026-11-20 11:34:58,584 - INFO - 127.0.0.1 - - [20/Nov/2026 11:34:58] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:34:58,588 - INFO - 127.0.0.1 - - [20/Nov/2026 11:34:58] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:34:58,658 - INFO - 127.0.0.1 - - [20/Nov/2026 11:34:58] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:35:04,795 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:04] "POST /post/3/edit HTTP/1.1" 302 -
+2026-11-20 11:35:04,811 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:04] "GET /post/ HTTP/1.1" 200 -
+2026-11-20 11:35:04,882 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:04] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:35:04,884 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:04] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:35:04,944 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:04] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:35:21,915 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:21] "GET /post/3/edit HTTP/1.1" 200 -
+2026-11-20 11:35:21,973 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:21] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:35:21,978 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:21] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:35:22,075 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:22] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:35:24,396 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:24] "POST /post/3/edit HTTP/1.1" 302 -
+2026-11-20 11:35:24,407 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:24] "GET /post/ HTTP/1.1" 200 -
+2026-11-20 11:35:24,469 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:24] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:35:24,475 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:24] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:35:24,528 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:24] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:35:25,250 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:25] "GET /post/3/edit HTTP/1.1" 200 -
+2026-11-20 11:35:25,307 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:25] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:35:25,311 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:25] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:35:25,385 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:25] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:35:28,864 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:28] "POST /post/3/edit HTTP/1.1" 302 -
+2026-11-20 11:35:28,874 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:28] "GET /post/ HTTP/1.1" 200 -
+2026-11-20 11:35:28,951 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:28] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-20 11:35:28,953 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:28] "GET /static/script/script.js HTTP/1.1" 304 -
+2026-11-20 11:35:29,008 - INFO - 127.0.0.1 - - [20/Nov/2026 11:35:29] "GET /favicon.ico HTTP/1.1" 500 -
+2026-11-20 11:41:37,950 - INFO - BEGIN (implicit)
+2026-11-20 11:41:37,977 - INFO - SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts ORDER BY posts.id
+2026-11-20 11:41:37,978 - INFO - [generated in 0.00071s] ()
+2026-11-20 11:41:38,713 - INFO - SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-20 11:41:38,713 - INFO - [generated in 0.00111s] (2,)
+2026-11-20 11:41:38,723 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-20 11:41:38,723 - INFO - [generated in 0.00053s] (2,)
+2026-11-20 11:41:38,726 - INFO - SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-20 11:41:38,726 - INFO - [cached since 0.01409s ago] (3,)
+2026-11-20 11:41:38,727 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-20 11:41:38,728 - INFO - [cached since 0.004918s ago] (3,)
+2026-11-20 11:41:38,734 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-20 11:41:38,734 - INFO - [cached since 0.01129s ago] (4,)
+2026-11-20 11:41:38,736 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-20 11:41:38,737 - INFO - [cached since 0.01354s ago] (5,)
+2026-11-20 11:41:38,738 - INFO - SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-20 11:41:38,739 - INFO - [cached since 0.01577s ago] (6,)
+2026-11-20 11:42:01,317 - INFO - ROLLBACK
+2026-11-20 11:42:13,349 - INFO - BEGIN (implicit)
+2026-11-20 11:42:13,354 - INFO - SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id, users_1.id AS id_1, users_1.username, users_1.email, users_1.password 
+FROM posts LEFT OUTER JOIN users AS users_1 ON users_1.id = posts.user_id ORDER BY posts.id
+2026-11-20 11:42:13,400 - INFO - [generated in 0.04572s] ()
+2026-11-20 11:42:13,405 - INFO - SELECT post_tags.post_id, tags.id, tags.name 
+FROM post_tags JOIN tags ON tags.id = post_tags.tag_id 
+WHERE post_tags.post_id IN (?, ?, ?, ?, ?)
+2026-11-20 11:42:13,405 - INFO - [generated in 0.00060s] (2, 3, 4, 5, 6)
+2026-11-20 11:43:46,516 - INFO - SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts ORDER BY posts.id
+2026-11-20 11:43:46,518 - INFO - [generated in 0.00272s] ()
+2026-11-20 11:44:14,741 - INFO - SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id, users_1.id AS id_1, users_1.username, users_1.email, users_1.password 
+FROM posts LEFT OUTER JOIN users AS users_1 ON users_1.id = posts.user_id ORDER BY posts.id
+2026-11-20 11:44:14,741 - INFO - [cached since 121.4s ago] ()
+2026-11-20 11:44:14,746 - INFO - SELECT post_tags.post_id, tags.id, tags.name 
+FROM post_tags JOIN tags ON tags.id = post_tags.tag_id 
+WHERE post_tags.post_id IN (?, ?, ?, ?, ?)
+2026-11-20 11:44:14,746 - INFO - [cached since 121.3s ago] (2, 3, 4, 5, 6)
+2026-11-20 11:46:27,777 - INFO - SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts ORDER BY posts.id
+2026-11-20 11:46:27,777 - INFO - [cached since 161.2s ago] ()
+2026-11-20 11:47:00,446 - INFO - SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id, users_1.id AS id_1, users_1.username, users_1.email, users_1.password 
+FROM posts LEFT OUTER JOIN users AS users_1 ON users_1.id = posts.user_id ORDER BY posts.id
+2026-11-20 11:47:00,447 - INFO - [cached since 287.1s ago] ()
+2026-11-20 11:47:00,453 - INFO - SELECT post_tags.post_id, tags.id, tags.name 
+FROM post_tags JOIN tags ON tags.id = post_tags.tag_id 
+WHERE post_tags.post_id IN (?, ?, ?, ?, ?)
+2026-11-20 11:47:00,454 - INFO - [cached since 287s ago] (2, 3, 4, 5, 6)

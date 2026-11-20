@@ -32,10 +32,15 @@
         </h1>
 
         <div class="post-detail-meta">
-            <span>Автор: {{ post.author }}</span>
+            <span>
+                Автор:
+                {{ post.user.username if post.user else "Невідомий" }}
+            </span>
+
             <span>
                 Дата: {{ post.posted.strftime('%d.%m.%Y') }}
             </span>
+
             <span>ID: #{{ post.id }}</span>
         </div>
 
@@ -44,6 +49,20 @@
         <div class="post-detail-content">
             {{ post.content }}
         </div>
+
+        {% if post.tags %}
+            <div class="post-detail-tags">
+                <strong>Теги:</strong>
+
+                <div class="post-tags-list">
+                    {% for tag in post.tags %}
+                        <span class="post-tag">
+                            {{ tag.name }}
+                        </span>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
 
         <div class="post-detail-actions">
             <a href="{{ url_for('posts.edit_post', post_id=post.id) }}"
@@ -58,5 +77,6 @@
         </div>
 
     </article>
+
 </main>
 {% endblock %}
