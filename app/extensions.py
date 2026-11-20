@@ -2,6 +2,12 @@
 
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_bcrypt import Bcrypt
+from flask_login import LoginManager
+
+
+bcrypt = Bcrypt()
+
 from sqlalchemy import MetaData
 
 naming_convention = {
@@ -17,3 +23,4 @@ db = SQLAlchemy(
 )
 
 migrate = Migrate()
+login_manager = LoginManager()

@@ -1,7 +1,9 @@
 from flask import render_template, request, redirect, url_for,session,flash,make_response
 from . import user_bp
-
-
+from .forms import RegistrationForm
+from .models import User
+from app.extensions import db, bcrypt
+from flask_login import login_user, logout_user, login_required, current_user
 @user_bp.route("/hi/<string:name>")
 def greetings(name):
     name = name.upper()
@@ -15,43 +17,48 @@ def admin():
         url_for("users.greetings", name="Administrator", age=45)
     )
 
+
 @user_bp.route("/login", methods=["GET", "POST"])
 def login():
-    if request.method == "GET":
-        message_name = ""
-        message_pass = ""
+    message_name = ""
+    message_pass = ""
 
-        return render_template(
-            "login.html",
-            message_name=message_name,
-            message_pass=message_pass
-        )
+    if request.method == "POST":
+        name = request.form.get("name", "").strip()
+        password = request.form.get("password", "")
 
-    name = request.form.get("name", "").strip()
-    password = request.form.get("password", "")
+        if not name:
+            message_name = "Помилка: введіть ім'я"
 
-    if not name:
-        message_name = "Помилка: введіть ім'я"
-        message_pass = ""
+        elif not password:
+            message_pass = "Помилка: введіть пароль"
 
-        return render_template(
-            "login.html",
-            message_name=message_name,
-            message_pass=message_pass
-        )
+        else:
+            user = db.session.execute(
+                db.select(User).filter_by(username=name)
+            ).scalar_one_or_none()
 
-    elif not password:
-        message_name = ""
-        message_pass = "Помилка: введіть пароль"
+            
+            if user and bcrypt.check_password_hash(
+                user.password, password
+            ):
+                login_user(user)
 
-        return render_template(
-            "login.html",
-            message_name=message_name,
-            message_pass=message_pass
-        )
-    
-    session["username"] = name
-    return redirect(url_for("users.profile"))
+                session["username"] = user.username
+
+                flash("Вхід виконано успішно!", "success")
+                return redirect(url_for("users.account"))
+
+
+            else:
+                message_pass = "Неправильне ім'я або пароль"
+
+    return render_template(
+        "login.html",
+        message_name=message_name,
+        message_pass=message_pass
+    )
+
 
 @user_bp.route("/profile")
 def profile():
@@ -140,7 +147,75 @@ def set_theme(theme):
     return redirect(url_for("users.profile"))
 
 
+
 @user_bp.route("/logout")
 def logout():
+    logout_user()
     session.pop("username", None)
+
+    flash("Ви успішно вийшли із системи!", "success")
     return redirect(url_for("users.login"))
+
+
+
+@user_bp.route("/register", methods=["GET", "POST"])
+def register():
+    if current_user.is_authenticated:
+        return redirect(url_for("users.account"))
+    form = RegistrationForm()
+
+    if form.validate_on_submit():
+        hashed_password = bcrypt.generate_password_hash(
+            form.password.data
+        ).decode("utf-8")
+
+        user = User(
+            username=form.username.data,
+            email=form.email.data,
+            password=hashed_password
+        )
+
+        db.session.add(user)
+        db.session.commit()
+
+        flash("Реєстрація успішна! Тепер увійдіть у систему.", "success")
+        return redirect(url_for("users.login"))
+
+    return render_template("register.html", form=form)
+
+
+@user_bp.route("/account")
+@login_required
+def account():
+    if "username" not in session:
+        flash("Спочатку увійдіть у систему!", "error")
+        return redirect(url_for("users.login"))
+
+    username = session["username"]
+
+    user = db.session.execute(
+        db.select(User).filter_by(username=username)
+    ).scalar_one_or_none()
+
+    if user is None:
+        session.pop("username", None)
+        return redirect(url_for("users.login"))
+
+    return render_template(
+        "account.html",
+        user=user
+    )
+
+
+@user_bp.route("/all-users")
+@login_required
+def all_users():
+    users = db.session.execute(
+        db.select(User).order_by(User.id)
+    ).scalars().all()
+
+    return render_template(
+        "all_users.html",
+        users=users,
+        users_count=len(users)
+    )

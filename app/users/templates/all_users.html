@@ -1,0 +1,55 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class="users-page">
+
+    <div class="users-container">
+
+        <div class="users-header">
+            <h1>Зареєстровані користувачі</h1>
+            <p>Список користувачів системи</p>
+
+            <div class="users-count">
+                Загальна кількість: {{ users_count }}
+            </div>
+        </div>
+
+        {% if users %}
+
+            <div class="users-table-wrapper">
+                <table class="users-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Ім'я користувача</th>
+                            <th>Електронна пошта</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {% for user in users %}
+                        <tr>
+                            <td>{{ user.id }}</td>
+                            <td>{{ user.username }}</td>
+                            <td>{{ user.email }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        {% else %}
+
+            <div class="users-empty">
+                У системі ще немає зареєстрованих користувачів.
+            </div>
+
+        {% endif %}
+
+    </div>
+
+</main>
+
+{% endblock %}

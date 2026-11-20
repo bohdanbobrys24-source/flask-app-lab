@@ -63,11 +63,41 @@
             </a>
         </li>
 
-        <li>
-            <a href="{{ url_for('users.login') }}">
-                Увійти
-            </a>
-        </li>
+        {% if current_user.is_authenticated %}
+
+            <li>
+                <a href="{{ url_for('users.account') }}">
+                    Мій акаунт
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('users.all_users') }}">
+                    Усі користувачі
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('users.logout') }}">
+                    Вийти
+                </a>
+            </li>
+
+        {% else %}
+
+            <li>
+                <a href="{{ url_for('users.login') }}">
+                    Увійти
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('users.register') }}">
+                    Реєстрація
+                </a>
+            </li>
+
+        {% endif %}
 
     </ul>
 </nav>

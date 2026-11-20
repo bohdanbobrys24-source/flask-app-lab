@@ -1,0 +1,86 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class="register-page">
+    <div class="register-card">
+
+        <div class="register-header">
+            <h1>Створення акаунта</h1>
+            <p>Заповніть дані для реєстрації</p>
+        </div>
+
+        <form method="POST"
+              action="{{ url_for('users.register') }}"
+              class="register-form">
+
+            {{ form.hidden_tag() }}
+
+            <div class="register-field">
+                {{ form.username.label }}
+                {{ form.username(
+                    placeholder="Введіть ім'я користувача"
+                ) }}
+
+                {% for error in form.username.errors %}
+                    <span class="register-error">
+                        {{ error }}
+                    </span>
+                {% endfor %}
+            </div>
+
+            <div class="register-field">
+                {{ form.email.label }}
+                {{ form.email(
+                    placeholder="example@gmail.com"
+                ) }}
+
+                {% for error in form.email.errors %}
+                    <span class="register-error">
+                        {{ error }}
+                    </span>
+                {% endfor %}
+            </div>
+
+            <div class="register-field">
+                {{ form.password.label }}
+                {{ form.password(
+                    placeholder="Мінімум 8 символів"
+                ) }}
+
+                {% for error in form.password.errors %}
+                    <span class="register-error">
+                        {{ error }}
+                    </span>
+                {% endfor %}
+            </div>
+
+            <div class="register-field">
+                {{ form.confirm_password.label }}
+                {{ form.confirm_password(
+                    placeholder="Повторіть пароль"
+                ) }}
+
+                {% for error in form.confirm_password.errors %}
+                    <span class="register-error">
+                        {{ error }}
+                    </span>
+                {% endfor %}
+            </div>
+
+            {{ form.submit(class="register-submit") }}
+
+        </form>
+
+        <div class="register-footer">
+            Уже маєте акаунт?
+            <a href="{{ url_for('users.login') }}">
+                Увійти
+            </a>
+        </div>
+
+    </div>
+</main>
+
+{% endblock %}

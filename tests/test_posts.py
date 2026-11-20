@@ -3,8 +3,9 @@ import unittest
 from datetime import datetime
 
 from app import create_app
-from app.extensions import db
+from app.extensions import db, bcrypt
 from app.post.models import Post
+from app.users.models import User
 
 
 class TestPostCRUD(unittest.TestCase):
@@ -16,6 +17,20 @@ class TestPostCRUD(unittest.TestCase):
 
         db.create_all()
         self.client = self.app.test_client()
+
+        # Створюємо тестового користувача
+        password_hash = bcrypt.generate_password_hash(
+            "Password123!"
+        ).decode("utf-8")
+
+        self.user = User(
+            username="Tester",
+            email="tester@example.com",
+            password=password_hash
+        )
+
+        db.session.add(self.user)
+        db.session.commit()
 
     def tearDown(self):
         db.session.remove()
@@ -30,7 +45,7 @@ class TestPostCRUD(unittest.TestCase):
             content="Тестовий вміст",
             category="news",
             is_active=True,
-            author="Tester",
+            user_id=self.user.id,
             posted=datetime.now()
         )
 
@@ -41,6 +56,7 @@ class TestPostCRUD(unittest.TestCase):
 
         self.assertIsNotNone(saved_post)
         self.assertEqual(saved_post.title, "Тестовий пост")
+        self.assertEqual(saved_post.user_id, self.user.id)
 
     def test_read_posts(self):
         """Перевірка отримання постів"""
@@ -49,7 +65,7 @@ class TestPostCRUD(unittest.TestCase):
             title="Пост для перегляду",
             content="Текст поста",
             category="tech",
-            author="Tester"
+            user_id=self.user.id
         )
 
         db.session.add(post)
@@ -69,7 +85,7 @@ class TestPostCRUD(unittest.TestCase):
             title="Старий заголовок",
             content="Старий текст",
             category="other",
-            author="Tester"
+            user_id=self.user.id
         )
 
         db.session.add(post)
@@ -77,12 +93,19 @@ class TestPostCRUD(unittest.TestCase):
 
         post.title = "Новий заголовок"
         post.content = "Новий текст"
+
         db.session.commit()
 
         updated_post = db.session.get(Post, post.id)
 
-        self.assertEqual(updated_post.title, "Новий заголовок")
-        self.assertEqual(updated_post.content, "Новий текст")
+        self.assertEqual(
+            updated_post.title,
+            "Новий заголовок"
+        )
+        self.assertEqual(
+            updated_post.content,
+            "Новий текст"
+        )
 
     def test_delete_post(self):
         """Перевірка видалення поста"""
@@ -91,7 +114,7 @@ class TestPostCRUD(unittest.TestCase):
             title="Пост для видалення",
             content="Текст поста",
             category="other",
-            author="Tester"
+            user_id=self.user.id
         )
 
         db.session.add(post)

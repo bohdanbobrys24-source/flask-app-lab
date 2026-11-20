@@ -4,12 +4,13 @@ from sqlalchemy.orm import Mapped, mapped_column
 from typing import List
 from sqlalchemy.orm import relationship
 from app.extensions import db
+from flask_login import UserMixin
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from app.post.models import Post
-class User(db.Model):
+class User(UserMixin, db.Model):
     __tablename__ = "users"
 
     id: Mapped[int] = mapped_column(
@@ -42,3 +43,11 @@ class User(db.Model):
 
     def __repr__(self):
         return f"<User {self.username}>"
+
+
+from app.extensions import login_manager
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return db.session.get(User, int(user_id))

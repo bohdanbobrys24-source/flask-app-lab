@@ -1,3 +1,4 @@
+
 import unittest
 from unittest.mock import patch
 from tempfile import TemporaryDirectory
@@ -5,13 +6,14 @@ from pathlib import Path
 
 from tinydb import TinyDB
 
-from app import app
+from app import create_app
 from app.product import views
 
 
 class TestProductCRUD(unittest.TestCase):
 
     def setUp(self):
+        # Створюємо тимчасову папку для тестової бази
         self.temp_dir = TemporaryDirectory()
 
         self.db = TinyDB(
@@ -27,20 +29,19 @@ class TestProductCRUD(unittest.TestCase):
         )
         self.patcher.start()
 
-        # Вимикаємо CSRF тільки під час тестування
-        app.config.update(
-            TESTING=True,
-            WTF_CSRF_ENABLED=False
-        )
-
-        self.client = app.test_client()
+        # Створюємо Flask-застосунок у тестовому режимі
+        self.app = create_app("testing")
+        self.client = self.app.test_client()
 
     def tearDown(self):
+        # Завершуємо підміну та очищаємо тимчасові файли
         self.patcher.stop()
         self.db.close()
         self.temp_dir.cleanup()
 
     def test_create_product(self):
+        """Перевірка створення товару."""
+
         response = self.client.post(
             "/product/add",
             data={
@@ -60,6 +61,8 @@ class TestProductCRUD(unittest.TestCase):
         )
 
     def test_read_products(self):
+        """Перевірка перегляду товарів."""
+
         self.table.insert({
             "id": 1,
             "name": "Ноутбук",
@@ -80,6 +83,8 @@ class TestProductCRUD(unittest.TestCase):
         )
 
     def test_update_product(self):
+        """Перевірка редагування товару."""
+
         self.table.insert({
             "id": 1,
             "name": "Ноутбук",
@@ -109,6 +114,8 @@ class TestProductCRUD(unittest.TestCase):
         )
 
     def test_delete_product(self):
+        """Перевірка видалення товару."""
+
         self.table.insert({
             "id": 1,
             "name": "Ноутбук",

@@ -1,0 +1,35 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class="register-page">
+    <div class="register-card">
+
+        <div class="register-header">
+            <h1>Мій акаунт</h1>
+            <p>Інформація про користувача</p>
+        </div>
+
+        <div class="account-info">
+            <p><strong>ID:</strong> {{ user.id }}</p>
+            <p><strong>Ім'я:</strong> {{ user.username }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+        </div>
+
+        <div class="register-footer">
+            <a href="{{ url_for('users.profile') }}">
+                Перейти до профілю
+            </a>
+        </div>
+
+        <form action="{{ url_for('users.logout') }}" method="GET">
+            <button type="submit" class="register-submit">
+                Вийти з акаунта
+            </button>
+        </form>
+
+    </div>
+</main>
+
+{% endblock %}

@@ -1575,3 +1575,211 @@ nav a.active {
     background: #dbeafe;
     border-color: #93c5fd;
 }
+
+/* ===== Реєстрація користувача ===== */
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 650px;
+}
+
+.register-card {
+    width: 100%;
+    max-width: 480px;
+    background: #191f2c;
+    border: 1px solid #30394b;
+    border-radius: 18px;
+    padding: 38px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-header h1 {
+    color: #f4f6fc;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.register-header p {
+    color: #9ba9c2;
+    font-size: 14px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.register-field label {
+    color: #d8e1f0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.register-field input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    background: #111723;
+    border: 1px solid #364154;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-field input:focus {
+    border-color: #3978eb;
+    box-shadow: 0 0 0 3px rgba(57, 120, 235, 0.15);
+}
+
+.register-field input::placeholder {
+    color: #71819b;
+}
+
+.register-error {
+    color: #fb7185;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.register-submit {
+    width: 100%;
+    padding: 14px;
+    background: #3978eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.register-submit:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}
+
+.register-footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #9ba9c2;
+    font-size: 14px;
+}
+
+.register-footer a {
+    color: #79adff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 540px) {
+    .register-page {
+        padding: 30px 15px;
+        min-height: auto;
+    }
+
+    .register-card {
+        padding: 25px 20px;
+    }
+
+    .register-header h1 {
+        font-size: 24px;
+    }
+}
+
+/* ===== Список користувачів ===== */
+
+.users-page {
+    padding: 60px 20px;
+    min-height: 650px;
+}
+
+.users-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.users-header {
+    margin-bottom: 30px;
+}
+
+.users-header h1 {
+    color: #f4f6fc;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.users-header p {
+    color: #9ba9c2;
+    margin-bottom: 20px;
+}
+
+.users-count {
+    display: inline-block;
+    background: #1e3a65;
+    color: #93c5fd;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.users-table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #30394b;
+    border-radius: 14px;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #191f2c;
+}
+
+.users-table th {
+    background: #222b3b;
+    color: #d8e1f0;
+    text-align: left;
+    padding: 17px 20px;
+    font-size: 14px;
+}
+
+.users-table td {
+    padding: 17px 20px;
+    color: #cbd5e1;
+    border-top: 1px solid #30394b;
+}
+
+.users-table tbody tr:hover {
+    background: #232d40;
+}
+
+.users-empty {
+    padding: 35px;
+    text-align: center;
+    background: #191f2c;
+    border: 1px solid #30394b;
+    border-radius: 14px;
+    color: #9ba9c2;
+}

@@ -5,8 +5,7 @@ from flask_migrate import Migrate
 import logging
 
 from .config import config
-from .extensions import db, migrate
-
+from .extensions import db, migrate, bcrypt, login_manager
 logging.basicConfig(
     filename="contact.log",
     level=logging.INFO,
@@ -23,6 +22,13 @@ def create_app(config_name="development"):
 
     db.init_app(app)
     migrate.init_app(app, db)
+    bcrypt.init_app(app)
+    login_manager.init_app(app)
+
+    login_manager.login_view = "users.login"
+    login_manager.login_message = "Спочатку увійдіть у систему!"
+    login_manager.login_message_category = "error"
+        
 
     from .users import user_bp
     from .product import product_bp
